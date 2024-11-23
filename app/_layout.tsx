@@ -20,6 +20,7 @@ export default function Layout (){
                     drawerItemStyle: {
                         marginVertical: 5, 
                     },
+                }}
                 
             >
             <Drawer.Screen  name="index" options={{drawerLabel : "Inicio"}}/>
