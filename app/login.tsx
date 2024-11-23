@@ -17,7 +17,7 @@ export default function Login() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [showPassword, setShowPassword] = useState(false); // Estado para controlar visibilidade da senha
+    const [showPassword, setShowPassword] = useState(false);
     const router = useRouter();
 
     const validateEmail = (email: string): boolean => {
@@ -76,7 +76,7 @@ export default function Login() {
                             style={styles.passwordInput}
                             placeholder="Senha"
                             placeholderTextColor="#808080"
-                            secureTextEntry={!showPassword} // Controla visibilidade da senha
+                            secureTextEntry={!showPassword}
                             value={password}
                             onChangeText={setPassword}
                             maxLength={20}
